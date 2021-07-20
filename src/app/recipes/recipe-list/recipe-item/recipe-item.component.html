@@ -1,0 +1,12 @@
+<a
+  style="cursor: pointer;"
+  class="list-group-item list-group-item-action d-flex justify-content-between"
+  [routerLink]="[currentRecipeIndex]"
+  routerLinkActive="active"
+  >
+  <div class="d-flex flex-column">
+    <h4>{{recipe.name}}</h4>
+    <p>{{recipe.description}}</p>
+  </div>
+  <img [src]="recipe.imagePath" [alt]="recipe.name" class="img-fluid" style="max-height: 50px;">
+</a>
